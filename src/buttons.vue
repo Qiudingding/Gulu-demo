@@ -5,6 +5,7 @@
 </template>
 <script>
     export default {
+        name: 'GuluButtons',
        mounted () {
            for (let node of this.$el.children) {
                let name = node.nodeName.toLowerCase()
@@ -15,7 +16,7 @@
        }
     }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
     .g-buttons{
         display: inline-flex;
         vertical-align: middle;
